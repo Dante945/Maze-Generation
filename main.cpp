@@ -36,7 +36,7 @@ void printMaze(mazeComponent **maze, int size) {
 
 bool checkValidNeighbor(int width, pair<int,int> coords){
     if (coords.first >= 1 && coords.second >= 1 && coords.first <= width - 2 &&
-            coords.second <= width - 2){
+        coords.second <= width - 2){
         return true;
     }
     else{
@@ -175,7 +175,6 @@ int main(int argc, char **argv) {
     printMaze(maze, width);
     cout << "Complete!" << endl;
 }
-
 
 
 

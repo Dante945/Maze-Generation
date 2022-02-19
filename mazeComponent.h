@@ -1,16 +1,21 @@
+// Author: Dante Viscuso
+// San Diego State University
+// CS210/CS496: Data Structures
 //
-// Created by dante on 2/19/2022.
+// File: mazeComponent.h
 //
+// Defines the structure that will represent the rooms of the maze
+// Holds if the room has been visited for DFS purposes
+// The coordinates of the rooms in terms of the maze
+// And a flag indicating if it's a room or just a wall
 
-#ifndef CS_210_PROJECT_4_V1_MAZECOMPONENT_H
-#define CS_210_PROJECT_4_V1_MAZECOMPONENT_H
+#ifndef RANDOM_MAZE_GENERATOR_MAZECOMPONENT_H
+#define RANDOM_MAZE_GENERATOR_MAZECOMPONENT_H
 
-//Maze Component
 struct mazeComponent {
     bool isRoom;
     bool visited = false;
     std::pair<int, int> coords;
 };
 
-
-#endif //CS_210_PROJECT_4_V1_MAZECOMPONENT_H
+#endif //RANDOM_MAZE_GENERATOR_MAZECOMPONENT_H
